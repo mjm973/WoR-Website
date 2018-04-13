@@ -5,6 +5,8 @@ const paths = ['static/svg/fairy_mono.svg', 'static/svg/wyvern_mono.svg', 'stati
 const targetDate = new Date(2018, 3, 24, 12, 0, 0, 0);
 const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSc_FEjPjmLCQheWiO2zbv7wkeNI1wRitgoGEKi_fWJy8EWD4w/viewform?usp=sf_link';
 
+const port = process.env.PORT || 8080;
+
 app.use('/static', express.static('static'))
 app.use('/about/*', (cReq, cRes, next) => {
   let now = new Date();
@@ -40,4 +42,4 @@ app.get('/*', (cReq, cRes) => {
   cRes.redirect('/')
 })
 
-app.listen(8080, () => console.log('Server listening on port 8080...'))
+app.listen(port, () => console.log(`Server listening on port ${port}...`))
