@@ -1,5 +1,7 @@
 const express = require('express')
-const app = express()
+const favicon = require('serve-favicon');
+const path = require('path');
+const app = express();
 
 const paths = ['static/svg/fairy_mono.svg', 'static/svg/wyvern_mono.svg', 'static/svg/phoenix_mono.svg', 'static/svg/pegasus_mono.svg']
 const targetDate = new Date(2018, 3, 24, 12, 0, 0, 0);
@@ -7,7 +9,9 @@ const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSc_FEjPjmLCQheWiO2zbv
 
 const port = process.env.PORT || 8080;
 
-app.use('/static', express.static('static'))
+app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use(favicon(path.join(__dirname, 'static', 'favicon.ico')))
+
 app.use('/about/*', (cReq, cRes, next) => {
   let now = new Date();
   let unlock = now.getTime() > targetDate.getTime();
