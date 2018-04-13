@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    title WoR
+    meta(name="viewport" content="width=device-width")
+    link(href='https://fonts.googleapis.com/css?family=Audiowide|Cousine' rel='stylesheet')
+    link(rel='stylesheet' href=cssPath)
+    script(src='static/js/main.js')
+  body
+    div(class='flex-contain full centered')
+      div(class='overlay fade-black')
+      div(class='flex-contain overlay')
+        h1(id='msg')
+      img(src=svgPath)
+      div(class='flex-contain overlay centered')
+        div(id='clock' class='band' data-millis=tMillis) --:--:--:--
+          a(href=fLink)
+            div(id='g-form')=fLink

@@ -1,0 +1,88 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+
+  color: white;
+}
+
+h1 {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 4em;
+  margin: 20px;
+}
+
+img {
+  width: 600px;
+  height: 600px;
+}
+
+a {
+  color: black;
+}
+
+.flex-contain {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 15px; */
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.band {
+  background-color:  rgba(255, 255, 255, 0.75);
+  font-family: 'Cousine', monospace;
+  color: black;
+}
+
+.centered {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.fade-black {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-contain > * {
+  width: 100%;
+  text-align: center;
+}
+
+#clock {
+  font-size: 54px;
+  padding: 10px;
+}
+
+#g-form {
+  font-size: 24px;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@media screen and (max-width: 760px) {
+  body #clock {
+    font-size: 3em;
+  }
+
+  body h1 {
+    font-size: 3em;
+  }
+}

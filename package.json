@@ -1,0 +1,15 @@
+{
+  "name": "wor-website",
+  "version": "1.0.0",
+  "description": "Teaser website and documentation for Wings of Resistance",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateo Juvera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}
