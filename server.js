@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 const paths = ['static/svg/fairy_mono.svg', 'static/svg/wyvern_mono.svg', 'static/svg/phoenix_mono.svg', 'static/svg/pegasus_mono.svg']
-const targetDate = new Date(2018, 3, 24, 12, 0, 0, 0);
+const targetDate = new Date(2018, 4, 3, 12, 0, 0, 0);
 const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLSc_FEjPjmLCQheWiO2zbv7wkeNI1wRitgoGEKi_fWJy8EWD4w/viewform?usp=sf_link';
 
 const port = process.env.PORT || 8080;
